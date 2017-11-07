@@ -1,0 +1,276 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="parameters">
+	<xs:complexType>
+	<xs:all>
+		<xs:element ref="verbose" maxOccurs="1" />
+		<xs:element ref="outputTxtFiles" maxOccurs="1" />
+
+		<xs:element ref="algoMode" maxOccurs="1" />
+		<xs:element ref="algoMeshDomain" maxOccurs="1" />
+		<xs:element ref="algoVacTHLRSolver" maxOccurs="1" />
+		<xs:element ref="algoVacTHonly" maxOccurs="1" />
+		<xs:element ref="algoDirect" maxOccurs="1" />
+		<xs:element ref="algoRecon" maxOccurs="1" />
+		<xs:element ref="algoReconInterf" maxOccurs="1" />
+		<xs:element ref="algoReconPolar" maxOccurs="1" />
+		<xs:element ref="algoReconPressure" maxOccurs="1" />
+		<xs:element ref="algoStartFromScratch" maxOccurs="1" />
+		
+		<xs:element ref="iterMaxDir" maxOccurs="1" />
+		<xs:element ref="epsStopDir" maxOccurs="1" />
+		<xs:element ref="iterMaxDirInitRecon" maxOccurs="1" />
+		<xs:element ref="iterMaxRecon" maxOccurs="1" />
+		<xs:element ref="epsStopRecon" maxOccurs="1" />
+
+		<xs:element ref="vacuumTriangleArea" maxOccurs="1" />
+		<xs:element ref="airTriangleArea" maxOccurs="1" />
+		
+		<xs:element ref="change_coil_sign" maxOccurs="1" />
+		<xs:element ref="change_psimeas_sign" maxOccurs="1" />
+		<xs:element ref="change_bmeas_sign" maxOccurs="1" />
+		<xs:element ref="outCOCOS" maxOccurs="1" />
+		<xs:element ref="n_profile_1d" maxOccurs="1" />
+
+		<xs:element ref="r0" maxOccurs="1" />
+
+		<xs:element ref="Afunc" maxOccurs="1" />
+		<xs:element ref="Aknots_n" maxOccurs="1" />
+		<xs:element ref="Aknots" maxOccurs="1" />
+		<xs:element ref="Aabg" maxOccurs="1" />
+
+		<xs:element ref="Bfunc" maxOccurs="1" />
+		<xs:element ref="Bknots_n" maxOccurs="1" />
+		<xs:element ref="Bknots" maxOccurs="1" />
+		<xs:element ref="Babg" maxOccurs="1" />
+
+		<xs:element ref="Cfunc" maxOccurs="1" />
+		<xs:element ref="Cknots_n" maxOccurs="1" />
+		<xs:element ref="Cknots" maxOccurs="1" />
+		<xs:element ref="lambdaNe" maxOccurs="1" />
+		<xs:element ref="agmM" maxOccurs="1" />
+
+		<xs:element ref="epsA" maxOccurs="1" />
+		<xs:element ref="sA" maxOccurs="1" />
+		<xs:element ref="penalA" maxOccurs="1" />
+		<xs:element ref="penalNegativeA" maxOccurs="1" />
+		<xs:element ref="epsB" maxOccurs="1" />
+		<xs:element ref="sB" maxOccurs="1" />
+		<xs:element ref="penalB" maxOccurs="1" />
+		<xs:element ref="epsC" maxOccurs="1" />
+		<xs:element ref="sC" maxOccurs="1" />
+		<xs:element ref="penalC" maxOccurs="1" />
+		
+		<xs:element ref="neumannPercent" maxOccurs="1" />
+		<xs:element ref="abserrB" maxOccurs="1" />
+		<xs:element ref="relerrB" maxOccurs="1" />
+		<xs:element ref="force_default_errB" maxOccurs="1" />
+		<xs:element ref="n_B_special_weight" maxOccurs="1" />
+		<xs:element ref="B_special_weight_index" maxOccurs="1" />
+		<xs:element ref="B_special_weight" maxOccurs="1" />
+
+		<xs:element ref="abserrF" maxOccurs="1" />
+		<xs:element ref="relerrF" maxOccurs="1" />
+		<xs:element ref="force_default_errF" maxOccurs="1" />
+		<xs:element ref="n_F_special_weight" maxOccurs="1" />
+		<xs:element ref="F_special_weight_index" maxOccurs="1" />
+		<xs:element ref="F_special_weight" maxOccurs="1" />
+
+		<xs:element ref="chord_dl" maxOccurs="1" />
+		<xs:element ref="abserrNe" maxOccurs="1" />
+		<xs:element ref="relerrNe" maxOccurs="1" />
+		<xs:element ref="force_default_errNe" maxOccurs="1" />
+		<xs:element ref="n_Ne_special_weight" maxOccurs="1" />
+		<xs:element ref="Ne_special_weight_index" maxOccurs="1" />
+		<xs:element ref="Ne_special_weight" maxOccurs="1" />
+
+		<xs:element ref="wavelength" maxOccurs="1" />
+		<xs:element ref="C1" maxOccurs="1" />
+		<xs:element ref="C3" maxOccurs="1" />
+		<xs:element ref="abserrPolar" maxOccurs="1" />
+		<xs:element ref="relerrPolar" maxOccurs="1" />
+		<xs:element ref="force_default_errPolar" maxOccurs="1" />
+		<xs:element ref="n_Polar_special_weight" maxOccurs="1" />
+		<xs:element ref="Polar_special_weight_index" maxOccurs="1" />
+		<xs:element ref="Polar_special_weight" maxOccurs="1" />
+
+		<xs:element ref="abserrS" maxOccurs="1" />
+		<xs:element ref="relerrS" maxOccurs="1" />
+		<xs:element ref="force_default_errS" maxOccurs="1" />
+		<xs:element ref="n_S_special_weight" maxOccurs="1" />
+		<xs:element ref="S_special_weight_index" maxOccurs="1" />
+		<xs:element ref="S_special_weight" maxOccurs="1" />
+		<xs:element ref="S012_weight" maxOccurs="1" />
+
+		<xs:element ref="n_points_eqx_contour"  maxOccurs="1" />
+		<xs:element ref="r_eqx_contour"  maxOccurs="1" />
+		<xs:element ref="z_eqx_contour"  maxOccurs="1" />
+		<xs:element ref="max_segment_length_eqx_contour"  maxOccurs="1" />
+		<xs:element ref="vacth_contour_choice"  maxOccurs="1" />
+		<xs:element ref="deltar"  maxOccurs="1" />
+		<xs:element ref="deltaz"  maxOccurs="1" />
+		<xs:element ref="d_filament"  maxOccurs="1" />
+		<xs:element ref="use_pfcoils" maxOccurs="1" />
+		<xs:element ref="nqc"  maxOccurs="1" />
+		<xs:element ref="qc"  maxOccurs="1" />
+		<xs:element ref="nqs"  maxOccurs="1" />
+		<xs:element ref="qs"  maxOccurs="1" />
+		<xs:element ref="npc"  maxOccurs="1" />
+		<xs:element ref="pc"  maxOccurs="1" />
+		<xs:element ref="nps"  maxOccurs="1" />
+		<xs:element ref="ps"  maxOccurs="1" />
+		<xs:element ref="manip"  maxOccurs="1" />
+		<xs:element ref="maxdist"  maxOccurs="1" />
+		<xs:element ref="compute_plasma_boundary"  maxOccurs="1" />
+		<xs:element ref="n_plasma_boundary_points"  maxOccurs="1" />
+		<xs:element ref="output_vacth_files"  maxOccurs="1" />
+
+	</xs:all>
+	</xs:complexType>
+	</xs:element>
+
+
+ 	<xs:simpleType name="unit_float">
+   		<xs:restriction base="xs:float">
+			<xs:minInclusive value="0"/>
+      			<xs:maxInclusive value="1"/>
+    		</xs:restriction>
+  	</xs:simpleType>
+
+	<xs:simpleType name="IntList">
+     		<xs:list itemType="xs:integer"/>
+  	</xs:simpleType>
+
+ 	<xs:simpleType name="FloatList">
+     		<xs:list itemType="xs:float"/>
+  	</xs:simpleType>
+
+ 	<xs:simpleType name="UnitFloatList">
+     		<xs:list itemType="unit_float"/>
+  	</xs:simpleType>
+
+
+	<xs:element name="verbose" type="xs:integer" />
+	<xs:element name="outputTxtFiles" type="xs:integer" />
+	
+	<xs:element name="algoMode" type="xs:integer" />
+	<xs:element name="algoMeshDomain" type="xs:integer" />
+	<xs:element name="algoVacTHLRSolver" type="xs:integer" />
+	<xs:element name="algoVacTHonly" type="xs:integer" />
+	<xs:element name="algoDirect" type="xs:integer" />
+	<xs:element name="algoRecon" type="xs:integer" />
+	<xs:element name="algoReconInterf" type="xs:integer" />
+	<xs:element name="algoReconPolar" type="xs:integer" />
+	<xs:element name="algoReconPressure" type="xs:integer" />
+	<xs:element name="algoStartFromScratch" type="xs:integer" />
+
+	<xs:element name="iterMaxDir" type="xs:integer" />
+	<xs:element name="epsStopDir" type="xs:float" />
+	<xs:element name="iterMaxDirInitRecon" type="xs:integer" />
+	<xs:element name="iterMaxRecon" type="xs:integer" />
+	<xs:element name="epsStopRecon" type="xs:float" />
+	
+	<xs:element name="vacuumTriangleArea" type="xs:float" />
+	<xs:element name="airTriangleArea" type="xs:float" />
+	
+	<xs:element name="change_coil_sign" type="xs:integer" />
+	<xs:element name="change_psimeas_sign" type="xs:integer" />
+	<xs:element name="change_bmeas_sign" type="xs:integer" />
+	<xs:element name="outCOCOS" type="xs:integer" />
+	<xs:element name="n_profile_1d" type="xs:integer" />
+	
+        <xs:element name="r0" type="xs:float" />
+
+	<xs:element name="Afunc" type="xs:integer" />
+	<xs:element name="Aknots_n" type="xs:integer" />
+	<xs:element name="Aknots" type="UnitFloatList" />
+	<xs:element name="Aabg" type="FloatList" />
+
+	<xs:element name="Bfunc" type="xs:integer" />
+	<xs:element name="Bknots_n" type="xs:integer" />
+	<xs:element name="Bknots" type="UnitFloatList" />
+	<xs:element name="Babg" type="FloatList" />
+
+	<xs:element name="Cfunc" type="xs:integer" />
+	<xs:element name="Cknots_n" type="xs:integer" />
+	<xs:element name="Cknots" type="UnitFloatList" />
+	<xs:element name="lambdaNe" type="xs:float" />
+	<xs:element name="agmM" type="FloatList" />
+
+	<xs:element name="epsA" type="xs:float" />
+	<xs:element name="sA" type="FloatList" />
+	<xs:element name="penalA" type="xs:float" />
+	<xs:element name="penalNegativeA" type="xs:float" />
+	<xs:element name="epsB" type="xs:float" />
+	<xs:element name="sB" type="FloatList" />
+	<xs:element name="penalB" type="xs:float" />
+	<xs:element name="epsC" type="xs:float" />
+	<xs:element name="sC" type="FloatList" />
+	<xs:element name="penalC" type="xs:float" />
+
+	<xs:element name="neumannPercent" type="xs:float" />
+	<xs:element name="abserrB" type="xs:float" />
+	<xs:element name="relerrB" type="xs:float" />
+	<xs:element name="force_default_errB" type="xs:integer" />
+	<xs:element name="n_B_special_weight" type="xs:integer" />
+	<xs:element name="B_special_weight_index" type="IntList" />
+	<xs:element name="B_special_weight" type="FloatList" />
+
+	<xs:element name="abserrF" type="xs:float" />
+	<xs:element name="relerrF" type="xs:float" />
+	<xs:element name="force_default_errF" type="xs:integer" />
+	<xs:element name="n_F_special_weight" type="xs:integer" />
+	<xs:element name="F_special_weight_index" type="IntList" />
+	<xs:element name="F_special_weight" type="FloatList" />
+
+	<xs:element name="chord_dl" type="xs:float" />
+
+	<xs:element name="abserrNe" type="xs:float" />
+	<xs:element name="relerrNe" type="xs:float" />
+	<xs:element name="force_default_errNe" type="xs:integer" />
+	<xs:element name="n_Ne_special_weight" type="xs:integer" />
+	<xs:element name="Ne_special_weight_index" type="IntList" />
+	<xs:element name="Ne_special_weight" type="FloatList" />
+
+	<xs:element name="wavelength" type="xs:float" />
+	<xs:element name="C1" type="xs:float" />
+	<xs:element name="C3" type="xs:float" />
+
+	<xs:element name="abserrPolar" type="xs:float" />
+	<xs:element name="relerrPolar" type="xs:float" />
+	<xs:element name="force_default_errPolar" type="xs:integer" />
+	<xs:element name="n_Polar_special_weight" type="xs:integer" />
+	<xs:element name="Polar_special_weight_index" type="IntList" />
+	<xs:element name="Polar_special_weight" type="FloatList" />
+
+	<xs:element name="abserrS" type="xs:float" />
+	<xs:element name="relerrS" type="xs:float" />
+	<xs:element name="force_default_errS" type="xs:integer" />
+	<xs:element name="n_S_special_weight" type="xs:integer" />
+	<xs:element name="S_special_weight_index" type="IntList" />
+	<xs:element name="S_special_weight" type="FloatList" />
+	<xs:element name="S012_weight" type="FloatList" />
+
+	<xs:element name="n_points_eqx_contour" type="xs:integer" />
+	<xs:element name="r_eqx_contour" type="FloatList" />
+	<xs:element name="z_eqx_contour" type="FloatList" />
+	<xs:element name="max_segment_length_eqx_contour" type="xs:float" />
+	<xs:element name="vacth_contour_choice" type="xs:integer" />
+	<xs:element name="deltar" type="xs:float" />
+	<xs:element name="deltaz" type="xs:float" />
+	<xs:element name="d_filament" type="xs:float" />
+	<xs:element name="use_pfcoils" type="xs:integer" />
+	<xs:element name="nqc"  type="xs:integer" />
+	<xs:element name="qc"  type="IntList" />
+	<xs:element name="nqs"  type="xs:integer" />
+	<xs:element name="qs"  type="IntList" />
+	<xs:element name="npc"  type="xs:integer" />
+	<xs:element name="pc"  type="IntList" />
+	<xs:element name="nps"  type="xs:integer" />
+	<xs:element name="ps"  type="IntList" />
+	<xs:element name="manip"  type="xs:integer" />
+	<xs:element name="maxdist" type="xs:float" />
+	<xs:element name="compute_plasma_boundary" type="xs:integer" />
+	<xs:element name="n_plasma_boundary_points" type="xs:integer" />
+	<xs:element name="output_vacth_files" type="xs:integer" />
+
+</xs:schema>
