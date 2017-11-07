@@ -1,4 +1,5 @@
 import util
 
-
-test = util.VacTHManip(
+runpath = "./data/new"
+datapath = "./data/orig"
+test = util.VacTHManip(datapath, runpath)

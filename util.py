@@ -1,3 +1,6 @@
+import numpy as np
+import pylab as pl
+
 class VacTHManip:
 	input_folder = ""
 	output_folder = ""
@@ -9,3 +12,5 @@ class VacTHManip:
 		run_folder = run_folder_
 		input_folder = data_folder + "/input"
 		output_folder = data_folder + "/output"
+		
+def load_txt
