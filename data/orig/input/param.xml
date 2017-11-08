@@ -10,7 +10,7 @@
 
 	<algoMeshDomain>1</algoMeshDomain>
 	<algoVacTHLRSolver>0</algoVacTHLRSolver>
-	<algoVacTHonly>0</algoVacTHonly>
+	<algoVacTHonly>1</algoVacTHonly>
 	<algoDirect>1</algoDirect>
 	<algoRecon>1</algoRecon>
 	<algoReconInterf>0</algoReconInterf>

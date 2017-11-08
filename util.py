@@ -16,7 +16,7 @@ class VacTHManip:
 		
 		data = np.zeros(5)
 	
-	def getDataFolder(self):
+	def get_data_folder(self):
 		return self._data_folder
 		
 def save2DArray(X, file):
